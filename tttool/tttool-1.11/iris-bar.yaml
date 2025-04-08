@@ -39,6 +39,18 @@ scripts:
     - P(bar_IRIS_VIRGINICA_SEPAL_WIDTH)
     - J(next)
 
+  bar_IRIS_SETOSA_SEPAL_LENGTH:
+    - P(bar_IRIS_SETOSA_SEPAL_LENGTH)
+    - J(next)
+
+  bar_IRIS_VERSICOLOR_SEPAL_LENGTH:
+    - P(bar_IRIS_VERSICOLOR_SEPAL_LENGTH)
+    - J(next)
+
+  bar_IRIS_VIRGINICA_SEPAL_LENGTH:
+    - P(bar_IRIS_VIRGINICA_SEPAL_LENGTH)
+    - J(next)
+
   reset:
     - $species := 0
     - P(start_listening)
@@ -62,4 +74,7 @@ speak:
   bar_IRIS_SETOSA_SEPAL_WIDTH: "This bar represents the sum of Sepal Width for Iris-setosa. The value is 170.9 centimeters."
   bar_IRIS_VERSICOLOR_SEPAL_WIDTH: "This bar represents the sum of Sepal Width for Iris-versicolor. The value is 138.5 centimeters."
   bar_IRIS_VIRGINICA_SEPAL_WIDTH: "This bar represents the sum of Sepal Width for Iris-virginica. The value is 148.7 centimeters."
+  bar_IRIS_SETOSA_SEPAL_LENGTH: "This bar represents the sum of Sepal Length for Iris-setosa. The value is 250.3 centimeters."
+  bar_IRIS_VERSICOLOR_SEPAL_LENGTH: "This bar represents the sum of Sepal Length for Iris-versicolor. The value is 296.8 centimeters."
+  bar_IRIS_VIRGINICA_SEPAL_LENGTH: "This bar represents the sum of Sepal Length for Iris-virginica. The value is 329.4 centimeters."
   next: "Touch the area for the species you want to explore."
