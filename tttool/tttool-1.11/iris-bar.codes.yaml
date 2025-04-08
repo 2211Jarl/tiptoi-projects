@@ -1,0 +1,25 @@
+# This file contains a mapping from script names to oid codes.
+# This way the existing scripts are always assigned to the the
+# same codes, even if you add further scripts.
+# 
+# You can copy the contents of this file into the main .yaml file,
+# if you want to have both together.
+# 
+# If you delete this file, the next run of "ttool assemble" might
+# use different codes for your scripts, and you might have to re-
+# create the images for your product.
+replay: 11979
+scriptcodes:
+  area_IRIS_SETOSA: 11981
+  area_IRIS_VERSICOLOR: 11982
+  area_IRIS_VIRGINICA: 11983
+  area_outside_bars: 11984
+  bar_IRIS_SETOSA_SEPAL_WIDTH: 11985
+  bar_IRIS_VERSICOLOR_SEPAL_WIDTH: 11986
+  bar_IRIS_VIRGINICA_SEPAL_WIDTH: 11987
+  next: 11988
+  reset: 11989
+  start: 11990
+  stop: 11991
+  stop_listening: 11992
+stop: 11980

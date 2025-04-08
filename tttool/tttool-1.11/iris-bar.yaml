@@ -1,0 +1,65 @@
+product-id: 901
+comment: Iris Bar Chart for Tiptoi
+init: $species := 0
+welcome: welcome
+language: en
+
+scripts:
+  start:
+    - $species == 0 ? P(start_listening)
+
+  stop:
+    - P(stop_listening)
+
+  area_IRIS_SETOSA:
+    - $species := 1 
+    - P(setosa_prompt)
+
+  area_IRIS_VERSICOLOR:
+    - $species := 2
+    - P(versicolor_prompt)
+
+  area_IRIS_VIRGINICA:
+    - $species := 3
+    - P(virginica_prompt)
+
+  area_outside_bars:
+    - $species := 0
+    - P(outside_bars_prompt)
+
+  bar_IRIS_SETOSA_SEPAL_WIDTH:
+    - P(bar_IRIS_SETOSA_SEPAL_WIDTH)
+    - J(next)
+
+  bar_IRIS_VERSICOLOR_SEPAL_WIDTH:
+    - P(bar_IRIS_VERSICOLOR_SEPAL_WIDTH)
+    - J(next)
+
+  bar_IRIS_VIRGINICA_SEPAL_WIDTH:
+    - P(bar_IRIS_VIRGINICA_SEPAL_WIDTH)
+    - J(next)
+
+  reset:
+    - $species := 0
+    - P(start_listening)
+
+  next:
+    - P(next)
+    - J(start)
+
+  stop_listening:
+    - P(stop_listening)
+    - J(reset)
+
+speak:
+  welcome: "Welcome to the Iris Bar Chart interactive experience."
+  start_listening: "Please touch a species column to begin."
+  stop_listening: "Thank you for exploring the Iris Bar Chart. Have a great day!"
+  setosa_prompt: "You are in the Iris-setosa column. Press on a bar to hear the sum of Sepal Width."
+  versicolor_prompt: "You are in the Iris-versicolor column. Press on a bar to hear the sum of Sepal Width."
+  virginica_prompt: "You are in the Iris-virginica column. Press on a bar to hear the sum of Sepal Width."
+  outside_bars_prompt: "You are outside the bar areas. Please touch one of the species bars to explore."
+  bar_IRIS_SETOSA_SEPAL_WIDTH: "This bar represents the sum of Sepal Width for Iris-setosa. The value is 170.9 centimeters."
+  bar_IRIS_VERSICOLOR_SEPAL_WIDTH: "This bar represents the sum of Sepal Width for Iris-versicolor. The value is 138.5 centimeters."
+  bar_IRIS_VIRGINICA_SEPAL_WIDTH: "This bar represents the sum of Sepal Width for Iris-virginica. The value is 148.7 centimeters."
+  next: "Touch the area for the species you want to explore."

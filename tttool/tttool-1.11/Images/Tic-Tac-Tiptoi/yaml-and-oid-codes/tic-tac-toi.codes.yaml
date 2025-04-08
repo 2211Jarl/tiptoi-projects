@@ -1,0 +1,28 @@
+# This file contains a mapping from script names to oid codes.
+# This way the existing scripts are always assigned to the the
+# same codes, even if you add further scripts.
+# 
+# You can copy the contents of this file into the main .yaml file,
+# if you want to have both together.
+# 
+# If you delete this file, the next run of "ttool assemble" might
+# use different codes for your scripts, and you might have to re-
+# create the images for your product.
+replay: 3944
+scriptcodes:
+  feldML: 3946
+  feldMM: 3947
+  feldMR: 3948
+  feldOL: 3949
+  feldOM: 3950
+  feldOR: 3951
+  feldUL: 3952
+  feldUM: 3953
+  feldUR: 3954
+  here_now: 3955
+  next: 3956
+  reset: 3957
+  reset2: 3958
+  win: 3959
+  win_check: 3960
+stop: 3945

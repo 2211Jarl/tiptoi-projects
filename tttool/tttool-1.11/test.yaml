@@ -1,0 +1,12 @@
+product-id: 901
+language: en
+
+init: init
+welcome: welcome
+
+scripts:
+  init:
+    - $species := "none"
+
+speak:
+  welcome: "Welcome"
