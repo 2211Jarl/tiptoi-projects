@@ -22,7 +22,4 @@ scriptcodes:
   bar_IRIS_VIRGINICA_SEPAL_WIDTH: 11987
   next: 11988
   reset: 11989
-  start: 11990
-  stop: 11991
-  stop_listening: 11992
 stop: 11980
