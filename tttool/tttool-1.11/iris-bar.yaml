@@ -18,10 +18,10 @@ scripts:
     - P(outside_bars_prompt) J(reset)
 
   bar_IRIS_SETOSA_SEPAL_WIDTH:
-    - P(bar_IRIS_SETOSA_SEPAL_WIDTH) J(area_IRIS_SETOSA)
+    - P(bar_IRIS_SETOSA_SEPAL_WIDTH) J(next)
 
   bar_IRIS_VERSICOLOR_SEPAL_WIDTH:
-    - P(bar_IRIS_VERSICOLOR_SEPAL_WIDTH) J(area_IRIS_SETOSA)
+    - P(bar_IRIS_VERSICOLOR_SEPAL_WIDTH) J(next)
 
   bar_IRIS_VIRGINICA_SEPAL_WIDTH:
     - P(bar_IRIS_VIRGINICA_SEPAL_WIDTH) J(next)
