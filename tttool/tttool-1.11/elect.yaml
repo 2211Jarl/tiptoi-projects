@@ -1,222 +1,222 @@
 product-id: 902
 comment: Electoral College Results for Tiptoi
 init: $touched := 0
-welcome: welcome, next
+welcome: 1, 4
 language: en
 
 scripts:
   cands:
-  - $can == 0? P(candidates) $can += 1
-  - $can == 1? P(parties) $can += 1
-  - $can == 2? P(win_check) $can := 0
+  - $can == 0? P(2) $can += 1
+  - $can == 1? P(3) $can += 1
+  - $can == 2? P(5) $can := 0
 
   st01: 
-  - $v01 == 0? P(state_01) P(next) $v01 += 1
-  - $v01 == 1? P(votes_01) P(next) $v01 := 0 
+  - $v01 == 0? P(8) P(4) $v01 += 1
+  - $v01 == 1? P(9) P(4) $v01 := 0 
 
   st02:
-  - $v02 == 0? P(state_02) P(next) $v02 := 1
-  - $v02 == 1? P(votes_02) P(next) $v02 := 0
+  - $v02 == 0? P(10) P(4) $v02 := 1
+  - $v02 == 1? P(11) P(4) $v02 := 0
 
   st03: 
-  - $v03 == 0? P(state_03) P(next) $v03 += 1 
-  - $v03 == 1? P(votes_03) P(next) $v03 := 0
+  - $v03 == 0? P(12) P(4) $v03 += 1 
+  - $v03 == 1? P(13) P(4) $v03 := 0
 
   st04:
-  - $v04 == 0? P(state_04) P(next) $v04 += 1
-  - $v04 == 1? P(votes_04) P(next) $v04 := 0
+  - $v04 == 0? P(14) P(4) $v04 += 1
+  - $v04 == 1? P(15) P(4) $v04 := 0
 
   st05: 
-  - $v05 == 0? P(state_05) P(next) $v05 += 1
-  - $v05 == 1? P(votes_05) P(next) $v05 := 0
+  - $v05 == 0? P(16) P(4) $v05 += 1
+  - $v05 == 1? P(17) P(4) $v05 := 0
 
   st06:
-  - $v06 == 0? P(state_06) P(next) $v06 += 1
-  - $v06 == 1? P(votes_06) P(next) $v06 := 0
+  - $v06 == 0? P(18) P(4) $v06 += 1
+  - $v06 == 1? P(19) P(4) $v06 := 0
 
   st07:
-  - $v07 == 0? P(state_07) P(next) $v07 += 1
-  - $v07 == 1? P(votes_07) P(next) $v07 := 0
+  - $v07 == 0? P(20) P(4) $v07 += 1
+  - $v07 == 1? P(21) P(4) $v07 := 0
 
   st08: 
-  - $v08 == 0? P(state_08) P(next) $v08 += 1
-  - $v08 == 1? P(votes_08) P(next) $v08 := 0
+  - $v08 == 0? P(22) P(4) $v08 += 1
+  - $v08 == 1? P(23) P(4) $v08 := 0
 
   st09: 
-  - $v09 == 0? P(state_09) P(next) $v09 += 1
-  - $v09 == 1? P(votes_09) P(next) $v09 := 0
+  - $v09 == 0? P(24) P(4) $v09 += 1
+  - $v09 == 1? P(25) P(4) $v09 := 0
 
   st10: 
-  - $v10 == 0? P(state_10) P(next) $v10 += 1
-  - $v10 == 1? P(votes_10) P(next) $v10 := 0
+  - $v10 == 0? P(26) P(4) $v10 += 1
+  - $v10 == 1? P(27) P(4) $v10 := 0
 
   st11: 
-  - $v11 == 0? P(state_11) P(next) $v11 += 1
-  - $v11 == 1? P(votes_11) P(next) $v11 := 0
+  - $v11 == 0? P(28) P(4) $v11 += 1
+  - $v11 == 1? P(29) P(4) $v11 := 0
 
   st12: 
-  - $v12 == 0? P(state_12) P(next) $v12 += 1
-  - $v12 == 1? P(votes_12) P(next) $v12 := 0
+  - $v12 == 0? P(30) P(4) $v12 += 1
+  - $v12 == 1? P(31) P(4) $v12 := 0
 
   st13: 
-  - $v13 == 0? P(state_13) P(next) $v13 += 1
-  - $v13 == 1? P(votes_13) P(next) $v13 := 0
+  - $v13 == 0? P(32) P(4) $v13 += 1
+  - $v13 == 1? P(33) P(4) $v13 := 0
 
   st14: 
-  - $v14 == 0? P(state_14) P(next) $v14 += 1
-  - $v14 == 1? P(votes_14) P(next) $v14 := 0
+  - $v14 == 0? P(34) P(4) $v14 += 1
+  - $v14 == 1? P(35) P(4) $v14 := 0
 
   st15: 
-  - $v15 == 0? P(state_15) P(next) $v15 += 1
-  - $v15 == 1? P(votes_15) P(next) $v15 := 0
+  - $v15 == 0? P(36) P(4) $v15 += 1
+  - $v15 == 1? P(37) P(4) $v15 := 0
 
   st16: 
-  - $v16 == 0? P(state_16) P(next) $v16 += 1
-  - $v16 == 1? P(votes_16) P(next) $v16 := 0
+  - $v16 == 0? P(38) P(4) $v16 += 1
+  - $v16 == 1? P(39) P(4) $v16 := 0
 
   st17: 
-  - $v17 == 0? P(state_17) P(next) $v17 += 1
-  - $v17 == 1? P(votes_17) P(next) $v17 := 0
+  - $v17 == 0? P(40) P(4) $v17 += 1
+  - $v17 == 1? P(41) P(4) $v17 := 0
 
   st18: 
-  - $v18 == 0? P(state_18) P(next) $v18 += 1
-  - $v18 == 1? P(votes_18) P(next) $v18 := 0
+  - $v18 == 0? P(42) P(4) $v18 += 1
+  - $v18 == 1? P(43) P(4) $v18 := 0
 
   st19: 
-  - $v19 == 0? P(state_19) P(next) $v19 += 1
-  - $v19 == 1? P(votes_19) P(next) $v19 := 0
+  - $v19 == 0? P(44) P(4) $v19 += 1
+  - $v19 == 1? P(45) P(4) $v19 := 0
 
   st20: 
-  - $v20 == 0? P(state_20) P(next) $v20 += 1
-  - $v20 == 1? P(votes_20) P(next) $v20 := 0
+  - $v20 == 0? P(46) P(4) $v20 += 1
+  - $v20 == 1? P(47) P(4) $v20 := 0
 
   st21: 
-  - $v21 == 0? P(state_21) P(next) $v21 += 1
-  - $v21 == 1? P(votes_21) P(next) $v21 := 0
+  - $v21 == 0? P(48) P(4) $v21 += 1
+  - $v21 == 1? P(49) P(4) $v21 := 0
 
   st22: 
-  - $v22 == 0? P(state_22) P(next) $v22 += 1
-  - $v22 == 1? P(votes_22) P(next) $v22 := 0
+  - $v22 == 0? P(50) P(4) $v22 += 1
+  - $v22 == 1? P(51) P(4) $v22 := 0
 
   st23: 
-  - $v23 == 0? P(state_23) P(next) $v23 += 1
-  - $v23 == 1? P(votes_23) P(next) $v23 := 0
+  - $v23 == 0? P(52) P(4) $v23 += 1
+  - $v23 == 1? P(53) P(4) $v23 := 0
 
   st24: 
-  - $v24 == 0? P(state_24) P(next) $v24 += 1
-  - $v24 == 1? P(votes_24) P(next) $v24 := 0
+  - $v24 == 0? P(54) P(4) $v24 += 1
+  - $v24 == 1? P(55) P(4) $v24 := 0
 
   st25: 
-  - $v25 == 0? P(state_25) P(next) $v25 += 1
-  - $v25 == 1? P(votes_25) P(next) $v25 := 0
+  - $v25 == 0? P(56) P(4) $v25 += 1
+  - $v25 == 1? P(57) P(4) $v25 := 0
 
   st26: 
-  - $v26 == 0? P(state_26) P(next) $v26 += 1
-  - $v26 == 1? P(votes_26) P(next) $v26 := 0
+  - $v26 == 0? P(58) P(4) $v26 += 1
+  - $v26 == 1? P(59) P(4) $v26 := 0
 
   st27: 
-  - $v27 == 0? P(state_27) P(next) $v27 += 1
-  - $v27 == 1? P(votes_27) P(next) $v27 := 0
+  - $v27 == 0? P(60) P(4) $v27 += 1
+  - $v27 == 1? P(61) P(4) $v27 := 0
 
   st28: 
-  - $v28 == 0? P(state_28) P(next) $v28 += 1
-  - $v28 == 1? P(votes_28) P(next) $v28 := 0
+  - $v28 == 0? P(62) P(4) $v28 += 1
+  - $v28 == 1? P(63) P(4) $v28 := 0
 
   st29: 
-  - $v29 == 0? P(state_29) P(next) $v29 += 1
-  - $v29 == 1? P(votes_29) P(next) $v29 := 0
+  - $v29 == 0? P(64) P(4) $v29 += 1
+  - $v29 == 1? P(65) P(4) $v29 := 0
 
   st30: 
-  - $v30 == 0? P(state_30) P(next) $v30 += 1
-  - $v30 == 1? P(votes_30) P(next) $v30 := 0
+  - $v30 == 0? P(66) P(4) $v30 += 1
+  - $v30 == 1? P(67) P(4) $v30 := 0
 
   st31: 
-  - $v31 == 0? P(state_31) P(next) $v31 += 1
-  - $v31 == 1? P(votes_31) P(next) $v31 := 0
+  - $v31 == 0? P(68) P(4) $v31 += 1
+  - $v31 == 1? P(69) P(4) $v31 := 0
 
   st32: 
-  - $v32 == 0? P(state_32) P(next) $v32 += 1
-  - $v32 == 1? P(votes_32) P(next) $v32 := 0
+  - $v32 == 0? P(70) P(4) $v32 += 1
+  - $v32 == 1? P(71) P(4) $v32 := 0
 
   st33: 
-  - $v33 == 0? P(state_33) P(next) $v33 += 1
-  - $v33 == 1? P(votes_33) P(next) $v33 := 0
+  - $v33 == 0? P(72) P(4) $v33 += 1
+  - $v33 == 1? P(73) P(4) $v33 := 0
 
   st34: 
-  - $v34 == 0? P(state_34) P(next) $v34 += 1
-  - $v34 == 1? P(votes_34) P(next) $v34 := 0
+  - $v34 == 0? P(74) P(4) $v34 += 1
+  - $v34 == 1? P(75) P(4) $v34 := 0
 
   st35: 
-  - $v35 == 0? P(state_35) P(next) $v35 += 1
-  - $v35 == 1? P(votes_35) P(next) $v35 := 0
+  - $v35 == 0? P(76) P(4) $v35 += 1
+  - $v35 == 1? P(77) P(4) $v35 := 0
 
   st36: 
-  - $v36 == 0? P(state_36) P(next) $v36 += 1
-  - $v36 == 1? P(votes_36) P(next) $v36 := 0
+  - $v36 == 0? P(78) P(4) $v36 += 1
+  - $v36 == 1? P(79) P(4) $v36 := 0
 
   st37: 
-  - $v37 == 0? P(state_37) P(next) $v37 += 1
-  - $v37 == 1? P(votes_37) P(next) $v37 := 0
+  - $v37 == 0? P(80) P(4) $v37 += 1
+  - $v37 == 1? P(81) P(4) $v37 := 0
 
   st38: 
-  - $v38 == 0? P(state_38) P(next) $v38 += 1
-  - $v38 == 1? P(votes_38) P(next) $v38 := 0
+  - $v38 == 0? P(82) P(4) $v38 += 1
+  - $v38 == 1? P(83) P(4) $v38 := 0
 
   st39: 
-  - $v39 == 0? P(state_39) P(next) $v39 += 1
-  - $v39 == 1? P(votes_39) P(next) $v39 := 0
+  - $v39 == 0? P(84) P(4) $v39 += 1
+  - $v39 == 1? P(85) P(4) $v39 := 0
 
   st40: 
-  - $v40 == 0? P(state_40) P(next) $v40 += 1
-  - $v40 == 1? P(votes_40) P(next) $v40 := 0
+  - $v40 == 0? P(86) P(4) $v40 += 1
+  - $v40 == 1? P(87) P(4) $v40 := 0
 
   st41: 
-  - $v41 == 0? P(state_41) P(next) $v41 += 1
-  - $v41 == 1? P(votes_41) P(next) $v41 := 0
+  - $v41 == 0? P(88) P(4) $v41 += 1
+  - $v41 == 1? P(89) P(4) $v41 := 0
 
   st42: 
-  - $v42 == 0? P(state_42) P(next) $v42 += 1
-  - $v42 == 1? P(votes_42) P(next) $v42 := 0
+  - $v42 == 0? P(90) P(4) $v42 += 1
+  - $v42 == 1? P(91) P(4) $v42 := 0
 
   st43: 
-  - $v43 == 0? P(state_43) P(next) $v43 += 1
-  - $v43 == 1? P(votes_43) P(next) $v43 := 0
+  - $v43 == 0? P(92) P(4) $v43 += 1
+  - $v43 == 1? P(93) P(4) $v43 := 0
 
   st44: 
-  - $v44 == 0? P(state_44) P(next) $v44 += 1
-  - $v44 == 1? P(votes_44) P(next) $v44 := 0
+  - $v44 == 0? P(94) P(4) $v44 += 1
+  - $v44 == 1? P(95) P(4) $v44 := 0
 
   st45: 
-  - $v45 == 0? P(state_45) P(next) $v45 += 1
-  - $v45 == 1? P(votes_45) P(next) $v45 := 0
+  - $v45 == 0? P(96) P(4) $v45 += 1
+  - $v45 == 1? P(97) P(4) $v45 := 0
 
   st46: 
-  - $v46 == 0? P(state_46) P(next) $v46 += 1
-  - $v46 == 1? P(votes_46) P(next) $v46 := 0
+  - $v46 == 0? P(98) P(4) $v46 += 1
+  - $v46 == 1? P(99) P(4) $v46 := 0
 
   st47: 
-  - $v47 == 0? P(state_47) P(next) $v47 += 1
-  - $v47 == 1? P(votes_47) P(next) $v47 := 0
+  - $v47 == 0? P(100) P(4) $v47 += 1
+  - $v47 == 1? P(101) P(4) $v47 := 0
 
   st48: 
-  - $v48 == 0? P(state_48) P(next) $v48 += 1
-  - $v48 == 1? P(votes_48) P(next) $v48 := 0
+  - $v48 == 0? P(102) P(4) $v48 += 1
+  - $v48 == 1? P(103) P(4) $v48 := 0
 
   st49: 
-  - $v49 == 0? P(state_49) P(next) $v49 += 1
-  - $v49 == 1? P(votes_49) P(next) $v49 := 0
+  - $v49 == 0? P(104) P(4) $v49 += 1
+  - $v49 == 1? P(105) P(4) $v49 := 0
 
   st50: 
-  - $v50 == 0? P(state_50) P(next) $v50 += 1
-  - $v50 == 1? P(votes_50) P(next) $v50 := 0
+  - $v50 == 0? P(106) P(4) $v50 += 1
+  - $v50 == 1? P(107) P(4) $v50 := 0
 
   st51: 
-  - $v51 == 0? P(state_51) P(next) $v51 += 1
-  - $v51 == 1? P(votes_51) P(next) $v51 := 0
+  - $v51 == 0? P(108) P(4) $v51 += 1
+  - $v51 == 1? P(109) P(4) $v51 := 0
 
   summary:
-  - $ct == 0? P(total) $ct := 1
-  - $ct == 1? P(total1) $ct := 0
+  - $ct == 0? P(6) $ct := 1
+  - $ct == 1? P(7) $ct := 0
 
   reset:
   - $ct := 0 $touched := 0 $v01 := 0 $v02 := 0 $v03 := 0 $v04 := 0 $v05 := 0 
@@ -229,165 +229,167 @@ scripts:
   - $v36 := 0 $v37 := 0 $v38 := 0 $v39 := 0 $v40 := 0 $v41 := 0 $v42 := 0 $v43 := 0 
   - $v44 := 0 $v45 := 0 $v46 := 0 $v47 := 0 $v48 := 0 $v49 := 0 $v50 := 0 $v51 := 0
 
-speak:
-  welcome: "Welcome to the treemap of the Electoral College results on 2012"
-  candidates: "The candidates are Barack Obama and Mitt Romney"
-  parties: "Barack Obama is part of the Democrats and Mitt Romney is part of the Republicans"
-  next: "Press on the next place you are interested in"
-  win_check: "Barack Obama had won the Electoral College results on 2012 against Mitt Romney"
-  total: "The total Electoral College votes cast is 538"
-  total1: "The Democrats had 332 votes while the Republicans had 206 votes"
+media-path: elect-media/elect_%s
+
+# speak:
+#   welcome: "Welcome to the treemap of the Electoral College results on 2012"
+#   candidates: "The candidates are Barack Obama and Mitt Romney"
+#   parties: "Barack Obama is part of the Democrats and Mitt Romney is part of the Republicans"
+#   next: "Press on the next place you are interested in"
+#   win_check: "Barack Obama had won the Electoral College results on 2012 against Mitt Romney"
+#   total: "The total Electoral College votes cast is 538"
+#   total1: "The Democrats had 332 votes while the Republicans had 206 votes"
   
-  # All of the states
-  state_01: "This is the state of Alabama"
-  votes_01: "Alabama has 9 Electoral votes for the Republicans"
+#   # All of the states
+#   state_01: "This is the state of Alabama"
+#   votes_01: "Alabama has 9 Electoral votes for the Republicans"
   
-  state_02: "This is the state of Alaska"
-  votes_02: "Alaska has 3 Electoral votes for the Republicans"
+#   state_02: "This is the state of Alaska"
+#   votes_02: "Alaska has 3 Electoral votes for the Republicans"
 
-  state_03: "This is the state of Arizona"
-  votes_03: "Arizona has 11 Electoral votes for the Republicans"  
+#   state_03: "This is the state of Arizona"
+#   votes_03: "Arizona has 11 Electoral votes for the Republicans"  
 
-  state_04: "This is the state of Arkansas"
-  votes_04: "Arkansas has 6 Electoral votes for the Republicans"  
+#   state_04: "This is the state of Arkansas"
+#   votes_04: "Arkansas has 6 Electoral votes for the Republicans"  
 
-  state_05: "This is the state of California"
-  votes_05: "California has 55 Electoral votes for the Democrats"
+#   state_05: "This is the state of California"
+#   votes_05: "California has 55 Electoral votes for the Democrats"
 
-  state_06: "This is the state of Colorado"
-  votes_06: "Colorado has 9 Electoral votes for the Democrats"
+#   state_06: "This is the state of Colorado"
+#   votes_06: "Colorado has 9 Electoral votes for the Democrats"
 
-  state_07: "This is the state of Connecticut"
-  votes_07: "Connecticut has 7 Electoral votes for the Democrats"
+#   state_07: "This is the state of Connecticut"
+#   votes_07: "Connecticut has 7 Electoral votes for the Democrats"
 
-  state_08: "This is the state of Delaware"
-  votes_08: "Delaware has 3 Electoral votes for the Democrats"
+#   state_08: "This is the state of Delaware"
+#   votes_08: "Delaware has 3 Electoral votes for the Democrats"
 
-  state_09: "This is the District of Columbia"
-  votes_09: "The District of Columbia has 3 Electoral votes for the Democrats"
+#   state_09: "This is the District of Columbia"
+#   votes_09: "The District of Columbia has 3 Electoral votes for the Democrats"
 
-  state_10: "This is the state of Florida"
-  votes_10: "Florida has 29 Electoral votes for the Democrats"
+#   state_10: "This is the state of Florida"
+#   votes_10: "Florida has 29 Electoral votes for the Democrats"
 
-  state_11: "This is the state of Georgia"
-  votes_11: "Georgia has 16 Electoral votes for the Republicans"
+#   state_11: "This is the state of Georgia"
+#   votes_11: "Georgia has 16 Electoral votes for the Republicans"
 
-  state_12: "This is the state of Hawaii"
-  votes_12: "Hawaii has 4 Electoral votes for the Democrats"
+#   state_12: "This is the state of Hawaii"
+#   votes_12: "Hawaii has 4 Electoral votes for the Democrats"
 
-  state_13: "This is the state of Idaho"
-  votes_13: "Idaho has 4 Electoral votes for the Democrats"
+#   state_13: "This is the state of Idaho"
+#   votes_13: "Idaho has 4 Electoral votes for the Republicans"
 
-  state_14: "This is the state of Illinois"
-  votes_14: "Illinois has 20 Electoral votes for the Democrats"
+#   state_14: "This is the state of Illinois"
+#   votes_14: "Illinois has 20 Electoral votes for the Democrats"
 
-  state_15: "This is the state of Indiana"
-  votes_15: "Indiana has 11 Electoral votes for the Republicans"
+#   state_15: "This is the state of Indiana"
+#   votes_15: "Indiana has 11 Electoral votes for the Republicans"
 
-  state_16: "This is the state of Iowa"
-  votes_16: "Iowa has 6 Electoral votes for the Democrats"
+#   state_16: "This is the state of Iowa"
+#   votes_16: "Iowa has 6 Electoral votes for the Democrats"
 
-  state_17: "This is the state of Kansas"
-  votes_17: "Kansas has 6 Electoral votes for the Republicans"
+#   state_17: "This is the state of Kansas"
+#   votes_17: "Kansas has 6 Electoral votes for the Republicans"
 
-  state_18: "This is the state of Kentucky"
-  votes_18: "Kentucky has 6 Electoral votes for the Republicans"
+#   state_18: "This is the state of Kentucky"
+#   votes_18: "Kentucky has 8 Electoral votes for the Republicans"
 
-  state_19: "This is the state of Louisiana"
-  votes_19: "Louisiana has 8 Electoral votes for the Republicans"
+#   state_19: "This is the state of Louisiana"
+#   votes_19: "Louisiana has 8 Electoral votes for the Republicans"
 
-  state_20: "This is the state of Maine"
-  votes_20: "Maine has 4 Electoral votes for the Democrats"
+#   state_20: "This is the state of Maine"
+#   votes_20: "Maine has 4 Electoral votes for the Democrats"
 
-  state_21: "This is the state of Maryland"
-  votes_21: "Maryland has 10 Electoral votes for the Democrats"
+#   state_21: "This is the state of Maryland"
+#   votes_21: "Maryland has 10 Electoral votes for the Democrats"
 
-  state_22: "This is the state of Massachusetts"
-  votes_22: "Massachusetts has 11 Electoral votes for the Democrats"
+#   state_22: "This is the state of Massachusetts"
+#   votes_22: "Massachusetts has 11 Electoral votes for the Democrats"
 
-  state_23: "This is the state of Michigan"
-  votes_23: "Michigan has 16 Electoral votes for the Democrats"
+#   state_23: "This is the state of Michigan"
+#   votes_23: "Michigan has 16 Electoral votes for the Democrats"
 
-  state_24: "This is the state of Minnesota"
-  votes_24: "Minnesota has 10 Electoral votes for the Democrats"
+#   state_24: "This is the state of Minnesota"
+#   votes_24: "Minnesota has 10 Electoral votes for the Democrats"
 
-  state_25: "This is the state of Mississippi"
-  votes_25: "Mississippi has 6 Electoral votes for the Republicans"
+#   state_25: "This is the state of Mississippi"
+#   votes_25: "Mississippi has 6 Electoral votes for the Republicans"
 
-  state_26: "This is the state of Missouri"
-  votes_26: "Missouri has 10 Electoral votes for the Republicans"
+#   state_26: "This is the state of Missouri"
+#   votes_26: "Missouri has 10 Electoral votes for the Republicans"
 
-  state_27: "This is the state of Montana"
-  votes_27: "Montana has 3 Electoral votes for the Republicans"
+#   state_27: "This is the state of Montana"
+#   votes_27: "Montana has 3 Electoral votes for the Republicans"
 
-  state_28: "This is the state of Nebraska"
-  votes_28: "Nebraska has 5 Electoral votes for the Republicans"
+#   state_28: "This is the state of Nebraska"
+#   votes_28: "Nebraska has 5 Electoral votes for the Republicans"
 
-  state_29: "This is the state of Nevada"
-  votes_29: "Nevada has 6 Electoral votes for the Democrats"
+#   state_29: "This is the state of Nevada"
+#   votes_29: "Nevada has 6 Electoral votes for the Democrats"
 
-  state_30: "This is the state of New Hampshire"
-  votes_30: "New Hampshire has 4 Electoral votes for the Democrats"
+#   state_30: "This is the state of New Hampshire"
+#   votes_30: "New Hampshire has 4 Electoral votes for the Democrats"
 
-  state_31: "This is the state of New Jersey"
-  votes_31: "New Jersey has 14 Electoral votes for the Democrats"
+#   state_31: "This is the state of New Jersey"
+#   votes_31: "New Jersey has 14 Electoral votes for the Democrats"
 
-  state_32: "This is the state of New Mexico"
-  votes_32: "New Mexico has 5 Electoral votes for the Democrats"
+#   state_32: "This is the state of New Mexico"
+#   votes_32: "New Mexico has 5 Electoral votes for the Democrats"
 
-  state_33: "This is the state of New York"
-  votes_33: "New York has 29 Electoral votes for the Democrats"
+#   state_33: "This is the state of New York"
+#   votes_33: "New York has 29 Electoral votes for the Democrats"
 
-  state_34: "This is the state of North Carolina"
-  votes_34: "North Carolina has 15 Electoral votes for the Republicans"
+#   state_34: "This is the state of North Carolina"
+#   votes_34: "North Carolina has 15 Electoral votes for the Republicans"
 
-  state_35: "This is the state of North Dakota"
-  votes_35: "North Dakota has 3 Electoral votes for the Republicans"
+#   state_35: "This is the state of North Dakota"
+#   votes_35: "North Dakota has 3 Electoral votes for the Republicans"
 
-  state_36: "This is the state of Ohio"
-  votes_36: "Ohio has 18 Electoral votes for the Democrats"
+#   state_36: "This is the state of Ohio"
+#   votes_36: "Ohio has 18 Electoral votes for the Democrats"
 
-  state_37: "This is the state of Oklahoma"
-  votes_37: "Oklahoma has 7 Electoral votes for the Republicans"
+#   state_37: "This is the state of Oklahoma"
+#   votes_37: "Oklahoma has 7 Electoral votes for the Republicans"
   
-  state_38: "This is the state of Oregon"
-  votes_38: "Oregon has 7 Electoral votes for the Democrats"
+#   state_38: "This is the state of Oregon"
+#   votes_38: "Oregon has 7 Electoral votes for the Democrats"
 
-  state_39: "This is the state of Pennsylvania"
-  votes_39: "Pennsylvania has 20 Electoral votes for the Democrats"
+#   state_39: "This is the state of Pennsylvania"
+#   votes_39: "Pennsylvania has 20 Electoral votes for the Democrats"
 
-  state_40: "This is the state of Rhode Island"
-  votes_40: "Rhode Island has 4 Electoral votes for the Democrats"
+#   state_40: "This is the state of Rhode Island"
+#   votes_40: "Rhode Island has 4 Electoral votes for the Democrats"
 
-  state_41: "This is the state of South Carolina"
-  votes_41: "South Carolina has 9 Electoral votes for the Republicans"
+#   state_41: "This is the state of South Carolina"
+#   votes_41: "South Carolina has 9 Electoral votes for the Republicans"
 
-  state_42: "This is the state of South Dakota"
-  votes_42: "South Dakota has 3 Electoral votes for the Republicans"
+#   state_42: "This is the state of South Dakota"
+#   votes_42: "South Dakota has 3 Electoral votes for the Republicans"
 
-  state_43: "This is the state of Tennessee"
-  votes_43: "Tennessee has 11 Electoral votes for the Republicans"
+#   state_43: "This is the state of Tennessee"
+#   votes_43: "Tennessee has 11 Electoral votes for the Republicans"
 
-  state_44: "This is the state of Texas"
-  votes_44: "Texas has 38 Electoral votes for the Republicans"
+#   state_44: "This is the state of Texas"
+#   votes_44: "Texas has 38 Electoral votes for the Republicans"
 
-  state_45: "This is the state of Utah"
-  votes_45: "Utah has 6 Electoral votes for the Republicans"
+#   state_45: "This is the state of Utah"
+#   votes_45: "Utah has 6 Electoral votes for the Republicans"
   
-  state_46: "This is the state of Vermont"
-  votes_46: "Vermont has 3 Electoral votes for the Democrats"
+#   state_46: "This is the state of Vermont"
+#   votes_46: "Vermont has 3 Electoral votes for the Democrats"
 
-  state_47: "This is the state of Virginia"
-  votes_47: "Virginia has 13 Electoral votes for the Democrats"
+#   state_47: "This is the state of Virginia"
+#   votes_47: "Virginia has 13 Electoral votes for the Democrats"
   
-  state_48: "This is the state of Washington"
-  votes_48: "Washington has 12 Electoral votes for the Democrats"
+#   state_48: "This is the state of Washington"
+#   votes_48: "Washington has 12 Electoral votes for the Democrats"
   
-  state_49: "This is the state of West Virginia"
-  votes_49: "West Virginia has 3 Electoral votes for the Republicans"
+#   state_49: "This is the state of West Virginia"
+#   votes_49: "West Virginia has 5 Electoral votes for the Republicans"
 
-  state_50: "This is the state of Wisconsin"
-  votes_50: "Wisconsin has 10 Electoral votes for the Democrats"
+#   state_50: "This is the state of Wisconsin"
+#   votes_50: "Wisconsin has 10 Electoral votes for the Democrats"
 
-  state_51: "This is the state of Wyoming"
-  votes_51: "Wyoming has 3 Electoral votes for the Republicans"
+#   state_51: "This is the state of Wyoming"
+#   votes_51: "Wyoming has 3 Electoral votes for the Republicans"
