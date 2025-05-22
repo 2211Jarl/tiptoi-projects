@@ -18,26 +18,48 @@ scripts:
     - P(outside_bars_prompt) J(reset)
 
   bar_IRIS_SETOSA_SEPAL_WIDTH:
-    - P(bar_IRIS_SETOSA_SEPAL_WIDTH) J(next)
+    - $bar01 == 0? P(bar_IRIS_SETOSA_SEPAL_WIDTH) $bar01 += 1 J(next)
+    - $bar01 == 1? P(sepal_def) $bar01 += 1 J(next)
+    - $bar01 == 2? P(iris_setosa) $bar01 += 1 J(next)
+    - $bar01 == 3? P(width_def) $bar01 := 0 J(next)
 
   bar_IRIS_VERSICOLOR_SEPAL_WIDTH:
-    - P(bar_IRIS_VERSICOLOR_SEPAL_WIDTH) J(next)
+    - $bar02 == 0? P(bar_IRIS_VERSICOLOR_SEPAL_WIDTH) $bar02 += 1 J(next)
+    - $bar02 == 1? P(sepal_def) $bar02 += 1 J(next)
+    - $bar02 == 2? P(iris_versicolor) $bar02 += 1 J(next)
+    - $bar02 == 3? P(width_def) $bar02 := 0 J(next)
 
   bar_IRIS_VIRGINICA_SEPAL_WIDTH:
-    - P(bar_IRIS_VIRGINICA_SEPAL_WIDTH) J(next)
+    - $bar03 == 0? P(bar_IRIS_VIRGINICA_SEPAL_WIDTH) $bar03 += 1 J(next)
+    - $bar03 == 1? P(sepal_def) $bar03 += 1 J(next)
+    - $bar03 == 2? P(iris_virginica) $bar03 += 1 J(next)
+    - $bar03 == 3? P(width_def) $bar03 := 0 J(next)
 
   bar_IRIS_SETOSA_SEPAL_LENGTH:
-    - P(bar_IRIS_SETOSA_SEPAL_LENGTH) J(next)
+    - $bar04 == 0? P(bar_IRIS_SETOSA_SEPAL_LENGTH) $bar04 += 1 J(next)
+    - $bar04 == 1? P(sepal_def) $bar04 += 1 J(next)
+    - $bar04 == 2? P(iris_setosa) $bar04 += 1 J(next)
+    - $bar04 == 3? P(length_def) $bar04 := 0 J(next)
 
   bar_IRIS_VERSICOLOR_SEPAL_LENGTH:
-    - P(bar_IRIS_VERSICOLOR_SEPAL_LENGTH) J(next)
+    - $bar05 == 0? P(bar_IRIS_VERSICOLOR_SEPAL_LENGTH) $bar05 += 1 J(next)
+    - $bar05 == 1? P(sepal_def) $bar05 += 1 J(next)
+    - $bar05 == 2? P(iris_versicolor) $bar05 += 1 J(next)
+    - $bar05 == 3? P(length_def) $bar05 := 0 J(next)
 
   bar_IRIS_VIRGINICA_SEPAL_LENGTH:
-    - P(bar_IRIS_VIRGINICA_SEPAL_LENGTH) J(next)
+    - $bar06 == 0? P(bar_IRIS_VIRGINICA_SEPAL_LENGTH) $bar06 += 1 J(next)
+    - $bar06 == 1? P(sepal_def) $bar06 += 1 J(next)
+    - $bar06 == 2? P(iris_virginica) $bar06 += 1 J(next)
+    - $bar06 == 3? P(length_def) $bar06 := 0 J(next)
 
-  reset: $species := $var 
-  next: $species := $var P(next)
+  reset: 
+    - $species := $var $bar01 := 0 $bar02 := 0 $bar03 := 0
+    - $bar04 := 0 $bar05 := 0 $bar06 := 0
 
+  next: P(next)
+
+# from www.fs.usda.gov
 
 speak:
   welcome: "Welcome to the Iris Bar Chart interactive experience."
@@ -45,9 +67,15 @@ speak:
   versicolor_prompt: "You are in the Iris-versicolor column. Press on a bar to hear the values."
   virginica_prompt: "You are in the Iris-virginica column. Press on a bar to hear the values."
   outside_bars_prompt: "You are outside the bar areas. Please touch one of the species bars to explore."
+  width_def: "Width is the horizontal measurement taken at right angles to the length"
+  length_def: "Length measures the extent of something from end to end. It quantifies the distance between two points or the dimension of an object along its longest axis"
+  sepal_def: "The Sepal is the outer parts of the flower that enclose the bud"
   bar_IRIS_SETOSA_SEPAL_WIDTH: "This bar represents the sum of Sepal Width for Iris-setosa. The value is 170.9 centimeters."
+  iris_setosa: "Iris setosa has a deep violet blue flower. The sepals are deeply-veined dark purple with a yellow-white signal. The petals are very reduced in size, not exceeding the base of the sepals."
   bar_IRIS_VERSICOLOR_SEPAL_WIDTH: "This bar represents the sum of Sepal Width for Iris-versicolor. The value is 138.5 centimeters."
+  iris_versicolor: "Iris versicolor has a deep blue to purple, rarely white flower. The spreading sepals have purple veins as they gradually narrow to a white base, with a pubescent, greenish yellow signal."
   bar_IRIS_VIRGINICA_SEPAL_WIDTH: "This bar represents the sum of Sepal Width for Iris-virginica. The value is 148.7 centimeters."
+  iris_virginica: "Iris virginica var. virginica has a light blue to deep violet, rarely white, flower. The sepals are spreading with darker blue to purple veins with a light yellow pubescent signal."
   bar_IRIS_SETOSA_SEPAL_LENGTH: "This bar represents the sum of Sepal Length for Iris-setosa. The value is 250.3 centimeters."
   bar_IRIS_VERSICOLOR_SEPAL_LENGTH: "This bar represents the sum of Sepal Length for Iris-versicolor. The value is 296.8 centimeters."
   bar_IRIS_VIRGINICA_SEPAL_LENGTH: "This bar represents the sum of Sepal Length for Iris-virginica. The value is 329.4 centimeters."
