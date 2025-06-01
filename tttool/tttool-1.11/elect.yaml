@@ -1,13 +1,13 @@
 product-id: 902
 comment: Electoral College Results for Tiptoi
 init: $touched := 0
-welcome: 1, 4
+welcome: 1, 220, 4
 language: en
 
 scripts:
   intro:
   - $int == 0? P(217) P(218) $int += 1
-  - $int == 1? P(219) J(reset)
+  - $int == 1? P(219) $int := 0
 
   cands:
   - $can == 0? P(113) P(114) $can += 1
@@ -33,7 +33,7 @@ scripts:
 
   st05: 
   - $v05 == 0? P(122) P(4) $v05 += 1
-  - $v05 == 1? P(123) P(4) $v05 += 0
+  - $v05 == 1? P(123) P(4) $v05 += 1
   - $v05 == 2? P(17) P(4) $v05 := 0
 
   st06:
