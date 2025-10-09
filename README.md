@@ -5,7 +5,7 @@ It aims to make data exploration **accessible to visually challenged individuals
 
 The project is built using **tttool v1.11**, located in:
 
-Tiptoi-experiments/tiptoi-projects/tttool/tttool-1.11
+tiptoi-projects/tttool/tttool-1.11
 
 
 ---
