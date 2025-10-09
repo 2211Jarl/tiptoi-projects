@@ -93,6 +93,7 @@ Use `tttool` to generate 20x70 mm OID codes:
 
 ```bash
 ./tttool oid-codes --code-dim 20x70mm src/project.yaml
+```
 
 ### 3. Design Templates
 
@@ -106,6 +107,7 @@ Assemble your Tiptoi project file:
 
 ```bash
 ./tttool assemble src/project.yaml
+```
 
 ## 🙌 Acknowledgments
 
