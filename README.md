@@ -17,6 +17,12 @@ tiptoi-projects/tttool/tttool-1.11
 
 ---
 
+## 🎬 Demo
+
+[Watch a demo on YouTube](https://youtu.be/SiKodwf9AK4)
+
+---
+
 ## 🗂️ Project Structure
 
 <details>
@@ -78,8 +84,6 @@ Each folder includes:
 | **Tiptoi SDK / tttool v1.11** | Generate `.gme` files and OID codes |
 | **Python** | Automate data-to-sound mapping and file generation |
 | **GIMP** | Align visuals and integrate OID codes (.xcf files in `GIMP/`) |
-| **Audacity** | Create and normalize sound files (stored in `elect-media/`) |
-| **CSV / Excel** | Input data storage for sonification |
 
 ---
 
