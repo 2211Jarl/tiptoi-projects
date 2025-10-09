@@ -1,93 +1,114 @@
-# Tiptoi-Projects
+# 🎵 Tiptoi Data Sonification for the Visually Challenged
+
+This project explores **data sonification** — representing data through sound — using the **Ravensburger Tiptoi** pen system.  
+It aims to make data exploration **accessible to visually challenged individuals** by enabling them to *hear* data patterns through interactive OID codes.
+
+The project is built using **tttool v1.11**, located in:
+
+Tiptoi-experiments/tiptoi-projects/tttool/tttool-1.11
 
 
+---
 
-## Getting started
+## ⚠️ Directory Note
 
-To make it easy for you to get started with GitLab, here's a list of recommended next steps.
+> All **YAML configuration files** and **Python scripts** must be placed **in the same directory as `tttool`** (inside `tttool-1.11/`).  
+> `tttool` depends on relative paths, so commands like `assemble` or `oid-codes` will fail if the YAML files are located elsewhere.
 
-Already a pro? Just edit this README.md and make it your own. Want to make it easy? [Use the template at the bottom](#editing-this-readme)!
+---
 
-## Add your files
+## 🗂️ Project Structure
 
-- [ ] [Create](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#create-a-file) or [upload](https://docs.gitlab.com/ee/user/project/repository/web_editor.html#upload-a-file) files
-- [ ] [Add files using the command line](https://docs.gitlab.com/topics/git/add_files/#add-files-to-a-git-repository) or push an existing Git repository with the following command:
+<details>
+<summary>Click to expand folder structure</summary>
 
-```
-cd existing_repo
-git remote add origin https://gitlab.au.dk/au777930/tiptoi-projects.git
-git branch -M main
-git push -uf origin main
-```
+Tiptoi-experiments/
+└── tiptoi-projects/
+    ├── tttool/
+    │   ├── tttool-1.11/
+    │   │   ├── data/                   # CSV datasets (e.g., storm, pricing, etc.)
+    │   │   ├── elect-media/            # Electronic media: sound files, effects, etc.
+    │   │   ├── Sample templates/       # Experimental layouts for OID integration
+    │   │   │   ├── Idea_1/             # Concept 1: Bar Graph with Sonified OIDs
+    │   │   │   ├── Idea_2/             # Concept 2: Spatial or Map Layout
+    │   │   │   └── Idea_3/             # Concept 3: Interactive Data Cards
+    │   │   ├── src/                    # YAML configurations + Python scripts
+    │   │   ├── output/                 # Compiled .gme files for Tiptoi pen
+    │   │   └── tttool.exe              # tttool binary (v1.11)
+    └── GIMP/                            # GIMP .xcf files for designing layouts
 
-## Integrate with your tools
 
-- [ ] [Set up project integrations](https://gitlab.au.dk/au777930/tiptoi-projects/-/settings/integrations)
+</details>
 
-## Collaborate with your team
+---
 
-- [ ] [Invite team members and collaborators](https://docs.gitlab.com/ee/user/project/members/)
-- [ ] [Create a new merge request](https://docs.gitlab.com/ee/user/project/merge_requests/creating_merge_requests.html)
-- [ ] [Automatically close issues from merge requests](https://docs.gitlab.com/ee/user/project/issues/managing_issues.html#closing-issues-automatically)
-- [ ] [Enable merge request approvals](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)
-- [ ] [Set auto-merge](https://docs.gitlab.com/user/project/merge_requests/auto_merge/)
+## 🧠 Concept
 
-## Test and Deploy
+Each **data point** is assigned a sound or tone that represents specific attributes like:
+- **Pitch** → Magnitude  
+- **Volume** → Intensity  
+- **Duration** → Frequency or time dimension  
 
-Use the built-in continuous integration in GitLab.
+Users interact with **OID codes** printed next to data visuals. When touched, the **Tiptoi pen** plays a corresponding sound, transforming visual information into an **auditory experience** that supports inclusive, tactile learning.
 
-- [ ] [Get started with GitLab CI/CD](https://docs.gitlab.com/ee/ci/quick_start/)
-- [ ] [Analyze your code for known vulnerabilities with Static Application Security Testing (SAST)](https://docs.gitlab.com/ee/user/application_security/sast/)
-- [ ] [Deploy to Kubernetes, Amazon EC2, or Amazon ECS using Auto Deploy](https://docs.gitlab.com/ee/topics/autodevops/requirements.html)
-- [ ] [Use pull-based deployments for improved Kubernetes management](https://docs.gitlab.com/ee/user/clusters/agent/)
-- [ ] [Set up protected environments](https://docs.gitlab.com/ee/ci/environments/protected_environments.html)
+---
 
-***
+## 🧪 Sample Templates
 
-# Editing this README
+The `Sample templates` directory includes three concepts for integrating OID codes into different data visualizations:
 
-When you're ready to make this README your own, just edit this file and use the handy template below (or feel free to structure it however you want - this is just a starting point!). Thanks to [makeareadme.com](https://www.makeareadme.com/) for this template.
+| Folder | Concept | Description |
+|--------|---------|-------------|
+| **Idea_1** | Bar Chart Sonification | Bars linked to OIDs that trigger tones representing their values. |
+| **Idea_2** | Spatial Layout / Map | OIDs embedded in regions or areas to represent spatial data. |
+| **Idea_3** | Data Cards | Individual cards or panels for comparing categories through sound. |
 
-## Suggestions for a good README
+Each folder includes:
+- The **OID codes** positioned for alignment and printing  
+- Notes on data mapping and audio behavior  
 
-Every project is different, so consider which of these sections apply to yours. The sections used in the template are suggestions for most open source projects. Also keep in mind that while a README can be too long and detailed, too long is better than too short. If you think your README is too long, consider utilizing another form of documentation rather than cutting out information.
+> **Design files (`.xcf`) are located in `Tiptoi-experiments/tiptoi-projects/GIMP/`**.
 
-## Name
-Choose a self-explaining name for your project.
+---
 
-## Description
-Let people know what your project can do specifically. Provide context and add a link to any reference visitors might be unfamiliar with. A list of Features or a Background subsection can also be added here. If there are alternatives to your project, this is a good place to list differentiating factors.
+## 🛠️ Tools & Technologies
 
-## Badges
-On some READMEs, you may see small images that convey metadata, such as whether or not all the tests are passing for the project. You can use Shields to add some to your README. Many services also have instructions for adding a badge.
+| Tool | Purpose |
+|------|---------|
+| **Tiptoi SDK / tttool v1.11** | Generate `.gme` files and OID codes |
+| **Python** | Automate data-to-sound mapping and file generation |
+| **GIMP** | Align visuals and integrate OID codes (.xcf files in `GIMP/`) |
+| **Audacity** | Create and normalize sound files (stored in `elect-media/`) |
+| **CSV / Excel** | Input data storage for sonification |
 
-## Visuals
-Depending on what you are making, it can be a good idea to include screenshots or even a video (you'll frequently see GIFs rather than actual videos). Tools like ttygif can help, but check out Asciinema for a more sophisticated method.
+---
 
-## Installation
-Within a particular ecosystem, there may be a common way of installing things, such as using Yarn, NuGet, or Homebrew. However, consider the possibility that whoever is reading your README is a novice and would like more guidance. Listing specific steps helps remove ambiguity and gets people to using your project as quickly as possible. If it only runs in a specific context like a particular programming language version or operating system or has dependencies that have to be installed manually, also add a Requirements subsection.
+## ⚙️ How to Use
 
-## Usage
-Use examples liberally, and show the expected output if you can. It's helpful to have inline the smallest example of usage that you can demonstrate, while providing links to more sophisticated examples if they are too long to reasonably include in the README.
+### 1. Prepare Your Dataset
+Add your numeric dataset (e.g., weather, finance, etc.) to the `data/` folder.
 
-## Support
-Tell people where they can go to for help. It can be any combination of an issue tracker, a chat room, an email address, etc.
+### 2. Generate OID Codes
+Use `tttool` to generate 20x70 mm OID codes:
 
-## Roadmap
-If you have ideas for releases in the future, it is a good idea to list them in the README.
+```bash
+./tttool oid-codes --code-dim 20x70mm src/project.yaml
 
-## Contributing
-State if you are open to contributions and what your requirements are for accepting them.
+### 3. Design Templates
 
-For people who want to make changes to your project, it's helpful to have some documentation on how to get started. Perhaps there is a script that they should run or some environment variables that they need to set. Make these steps explicit. These instructions could also be useful to your future self.
+Open a layout in **GIMP** (`Tiptoi-experiments/tiptoi-projects/GIMP/`), align the OID codes next to visual elements, and export the final printable layout.
 
-You can also document commands to lint the code or run tests. These steps help to ensure high code quality and reduce the likelihood that the changes inadvertently break something. Having instructions for running tests is especially helpful if it requires external setup, such as starting a Selenium server for testing in a browser.
+---
 
-## Authors and acknowledgment
-Show your appreciation to those who have contributed to the project.
+### 4. Compile the `.gme` File
 
-## License
-For open source projects, say how it is licensed.
+Assemble your Tiptoi project file:
 
-## Project status
-If you have run out of energy or time for your project, put a note at the top of the README saying that development has slowed down or stopped completely. Someone may choose to fork your project or volunteer to step in as a maintainer or owner, allowing your project to keep going. You can also make an explicit request for maintainers.
+```bash
+./tttool assemble src/project.yaml
+
+## 🙌 Acknowledgments
+
+- **Ravensburger Tiptoi** — for the interactive learning platform
+- **tttool developers** — for reverse-engineering the Tiptoi format
+- **Aarhus University** — for supporting accessibility and inclusive technology research
