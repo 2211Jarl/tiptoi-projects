@@ -5,8 +5,9 @@ It aims to make data exploration **accessible to visually challenged individuals
 
 The project is built using **tttool v1.11**, located in:
 
+```bash
 tiptoi-projects/tttool/tttool-1.11
-
+```
 
 ---
 
@@ -28,6 +29,7 @@ tiptoi-projects/tttool/tttool-1.11
 <details>
 <summary>Click to expand folder structure</summary>
 
+```bash
 Tiptoi-experiments/
 └── tiptoi-projects/
     ├── tttool/
@@ -43,6 +45,7 @@ Tiptoi-experiments/
     │   │   └── tttool.exe              # tttool binary (v1.11)
     └── GIMP/                            # GIMP .xcf files for designing layouts
 
+```
 
 </details>
 
