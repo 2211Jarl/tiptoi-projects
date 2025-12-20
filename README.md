@@ -53,12 +53,13 @@ Tiptoi-experiments/
 
 ## 🧠 Concept
 
-Each **data point** is assigned a sound or tone that represents specific attributes like:
-- **Pitch** → Magnitude  
-- **Volume** → Intensity  
-- **Duration** → Frequency or time dimension  
+Each **part** is assigned an audio file, providing specific attributes like:
+- **Context** → Providing background information similar to a journalism report.
+- **Play** → Pause/Play the audio file.
+- **Route** → In later visualizations, the audio file guides users on where to place the pen for the best experience.
 
-Users interact with **OID codes** printed next to data visuals. When touched, the **Tiptoi pen** plays a corresponding sound, transforming visual information into an **auditory experience** that supports inclusive, tactile learning.
+
+Users interact with **OID codes** printed next to data visuals. When touched, the **Tiptoi pen** plays the corresponding audio file, transforming visual information into an **auditory experience** that supports inclusive, tactile learning.
 
 ---
 
@@ -68,15 +69,16 @@ The `Sample templates` directory includes three concepts for integrating OID cod
 
 | Folder | Concept | Description |
 |--------|---------|-------------|
-| **Idea_1** | Bar Chart Sonification | Bars linked to OIDs that trigger tones representing their values. |
-| **Idea_2** | Spatial Layout / Map | OIDs embedded in regions or areas to represent spatial data. |
-| **Idea_3** | Data Cards | Individual cards or panels for comparing categories through sound. |
+| **Tic-Tac-Tiptoi** | Tic-tac-toe|  A tic-tac-toe game to play|
+| **Iris-bar-chart** | Bar charts | Bars linked to OIDs that trigger explanations representing their values. |
+| **Electoral-College** | Spatial/Map data | OIDs embedded in regions or areas to represent spatial data. |
 
 Each folder includes:
 - The **OID codes** positioned for alignment and printing  
 - Notes on data mapping and audio behavior  
 
-> **Design files (`.xcf`) are located in `Tiptoi-experiments/tiptoi-projects/GIMP/`**.
+> **Design files (`.xcf`) are located in `tiptoi-projects\GIMP`**.
+> **The folders above can be found in `\tiptoi-projects\tttool\tttool-1.11\Sample_templates`**
 
 ---
 
@@ -93,10 +95,10 @@ Each folder includes:
 ## ⚙️ How to Use
 
 ### 1. Prepare Your Dataset
-Add your numeric dataset (e.g., weather, finance, etc.) to the `data/` folder.
+Add your numeric dataset (e.g., iris-dataset.) to the `data/` folder.
 
 ### 2. Generate OID Codes
-Use `tttool` to generate 20x70 mm OID codes:
+Use `tttool` to generate 20x70 mm OID codes or any size that suits your purposes:
 
 ```bash
 ./tttool oid-codes --code-dim 20x70mm src/project.yaml
@@ -104,7 +106,7 @@ Use `tttool` to generate 20x70 mm OID codes:
 
 ### 3. Design Templates
 
-Open a layout in **GIMP** (`Tiptoi-experiments/tiptoi-projects/GIMP/`), align the OID codes next to visual elements, and export the final printable layout.
+Open a layout in **GIMP** (`tiptoi-projects/GIMP/`), align the OID codes next to visual elements, and export the final printable layout.
 
 ---
 
