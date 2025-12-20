@@ -37,13 +37,13 @@ Tiptoi-experiments/
     │   │   ├── data/                   # CSV datasets (e.g., storm, pricing, etc.)
     │   │   ├── elect-media/            # Electronic media: sound files, effects, etc.
     │   │   ├── Sample templates/       # Experimental layouts for OID integration
-    │   │   │   ├── Idea_1/             # Concept 1: Bar Graph with Sonified OIDs
-    │   │   │   ├── Idea_2/             # Concept 2: Spatial or Map Layout
-    │   │   │   └── Idea_3/             # Concept 3: Interactive Data Cards
+    │   │   │   ├── Electoral-College/  # Concept 1: Spatial or Map Layout
+    │   │   │   ├── Iris-bar-chart/     # Concept 2: Bar Graph with Sonified OIDs
+    │   │   │   └── Tic-Tac-Tiptoi/     # Concept 3: A tic-tac-toe game to play
     │   │   ├── src/                    # YAML configurations + Python scripts
     │   │   ├── output/                 # Compiled .gme files for Tiptoi pen
     │   │   └── tttool.exe              # tttool binary (v1.11)
-    └── GIMP/                            # GIMP .xcf files for designing layouts
+    └── GIMP/                           # GIMP .xcf files for designing layouts
 
 ```
 
