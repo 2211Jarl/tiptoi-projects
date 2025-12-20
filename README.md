@@ -78,6 +78,7 @@ Each folder includes:
 - Notes on data mapping and audio behavior  
 
 > **Design files (`.xcf`) are located in `tiptoi-projects\GIMP`**.
+
 > **The folders above can be found in `\tiptoi-projects\tttool\tttool-1.11\Sample_templates`**
 
 ---
