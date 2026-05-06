@@ -46,7 +46,7 @@ Tiptoi-experiments/
     └── GIMP/                           # GIMP .xcf files for designing layouts
 
 ```
-
+#
 </details>
 
 ---
