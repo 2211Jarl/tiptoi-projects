@@ -1,7 +1,7 @@
-# 🎵 Tiptoi Data Sonification for the Visually Challenged
+# 🎵 Tiptoi Data Sonification for Data Journalism
 
-This project explores **data sonification** — representing data through sound — using the **Ravensburger Tiptoi** pen system.  
-It aims to make data exploration **accessible to visually challenged individuals** by enabling them to *hear* data patterns through interactive OID codes.
+This project explores **Multimodal Data Visualization** — representing data through audio and visually on a paper — using the **Ravensburger Tiptoi** pen system.  
+It aims to make data exploration **accessible in multiple ways** by enabling people to view the visualization on paper or *optionally listen to* audio explanations through interactive OID codes.
 
 The project is built using **tttool v1.11**, located in:
 
